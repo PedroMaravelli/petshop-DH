@@ -10,6 +10,9 @@ router.get('/contato', controllerNavegadores.contato)
 router.get('/login', controllerNavegadores.login)
 router.get('/servicos', controllerNavegadores.servicos)
 router.get('/sobre', controllerNavegadores.sobre)
+router.get('/cadastro', controllerNavegadores.cadastro)
+router.post('/cadastrar', indexController.cadastrado)
+
 
 
 

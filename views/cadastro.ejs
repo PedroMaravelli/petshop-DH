@@ -8,6 +8,8 @@
     <title>PETSHOP DH</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/cadastro.css">
+
 
     
 </head>
@@ -16,30 +18,26 @@
     <%- include('./partials/header') %>
     
     <main>
-        <!-- aqui vem o cadastro -->
-    </main>
-    <footer>
-        <div class="container">
-            <div class="logo-icon">
-                <img src="images/icon-black.png" alt="Icone Petshop DH">
-            </div>
-            <div class="info">
-                <p><a href="mailto:contato@petshopdh.com.br">contato@petshopdh.com.br</a> <br>
-                    <a href="tel:+5511984848484">(11) 98484-8484 (whatsapp)</a></p>
+        
 
-                <p>
-                    AVENIDA PAULISTA, 4242 <br>
-                    BAIRRO CONSOLAÇÃO <br>
-                    SÃO PAULO- SP
-                </p>
-            </div>
-            <div class="mapa">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14631.954336743434!2d-46.7724023!3d-23.532913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x739f0ddb0439cf94!2sDigital%20House%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1621457988095!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </footer>
+        <section class="containerCadastro">
+            <h2>Cadastrar Servico</h2> 
+                <form action="/cadastrar" method="post">
+                    <label for="servico">Serviço</label>
+                    <input type="text" id="servico" name="nome" placeholder="Digite o serviço que deseja cadastrar">
+                    
+                    <label for="precoServico">Preço do serviço</label>
+                    <input type="number" name="preco" id="preco" placeholder="Digite o preço do serviço">
+
+                    <button type="submit">Cadastrar</button>
+
+
+                </form>
+            </article>
+        </section>
+    </main>
+    <%- include('./partials/footer') %>
+    
 </body>
 
 </html>

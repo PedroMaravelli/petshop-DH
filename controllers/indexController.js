@@ -4,6 +4,13 @@ const indexController = {
     home:(req,res)=>{
         
     res.render('index',{servicos:listaServicos})
+    },
+    cadastrar:(req,res) => {
+    res.render('cadastro')
+    },
+    cadastrado: (req,res) => {
+    listaServicos.push(req.body)
+    res.render('index',{servicos:listaServicos})
     }
 
     
