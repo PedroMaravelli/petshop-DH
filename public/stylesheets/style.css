@@ -53,33 +53,7 @@ a.btn.btn-primary {
 }
 
 
-header {
-    width: 100%;
-    background-color: #FFBE51;
-}
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline-block;
-}
-
-header nav ul li a:any-link {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #fff;
-    display: inline-block;
-    padding: 10px;
-}
 
 section.banner p {
     width: 500px;

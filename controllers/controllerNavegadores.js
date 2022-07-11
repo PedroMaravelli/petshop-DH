@@ -10,6 +10,9 @@ const controllerNavegadores = {
     },
     servicos: (req,res) =>{
     res.render('servicos')
+    },
+    sobre: (req, res) =>{
+    res.render('sobre')
     }
 }
 module.exports = controllerNavegadores
