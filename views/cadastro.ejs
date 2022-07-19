@@ -22,12 +22,14 @@
 
         <section class="containerCadastro">
             <h2>Cadastrar Servico</h2> 
-                <form action="/cadastrar" method="post">
+                <form action="/cadastrar" method="post" enctype="multipart/form-data">
                     <label for="servico">Serviço</label>
-                    <input type="text" id="servico" name="nome" placeholder="Digite o serviço que deseja cadastrar">
+                    <input type="text" id="servico" name="nome" required placeholder="Digite o serviço que deseja cadastrar">
                     
                     <label for="precoServico">Preço do serviço</label>
-                    <input type="number" name="preco" id="preco" placeholder="Digite o preço do serviço">
+                    <input type="number" name="preco" id="preco" required placeholder="Digite o preço do serviço">
+
+
 
                     <button type="submit">Cadastrar</button>
 
