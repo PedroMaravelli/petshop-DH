@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PETSHOP DH</title>
+    <!-- CSS only -->
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/login.css">
+
 
     
 </head>
@@ -16,7 +19,16 @@
     <%- include('./partials/header') %>
     
     <main>
-        <!-- aqui vem o login -->
+        <form action="/login/concluido" method="post">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Exemplo@email.com">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+
+            <button type="submit">Registrar</button>
+            <a href="/cadastrarse">Cadastre-se</a>
+        </form>
+        
     </main>
     <footer>
         <div class="container">
@@ -40,6 +52,8 @@
             </div>
         </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+
 </body>
 
 </html>
