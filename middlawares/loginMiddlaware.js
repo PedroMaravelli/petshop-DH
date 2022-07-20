@@ -1,6 +1,8 @@
 const {body} = require('express-validator')
 
-loginValidacoes = [
+let loginValidacoes = [
     body('email').isEmail().notEmpty(),
-    body('senha').isLength({min:5})
+    body('senha').isLength({min:5}).notEmpty()
 ]
+
+module.exports = loginValidacoes

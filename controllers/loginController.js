@@ -1,6 +1,8 @@
 const path = require('path')
 const fs = require('fs')
 const bcrypt = require('bcrypt')
+const {validationResult} = require('express-validator')
+
 
 
 let usuariosJson = path.join("usuarios.json")
@@ -10,12 +12,22 @@ const loginController = {
         res.render('login')
     },
     loginConcluido: (req,res)=>{
-        res.render('contato')
-
         let { email, senha} = req.body
-        let senhaCriptografada = bcrypt.hashSync(senha, 10)
-        let loginJson = JSON.stringify({email,senha: senhaCriptografada})
-        fs.writeFileSync(usuariosJson, loginJson)
+        const erro = validationResult(req)
+
+        if(!erro.isEmpty()){
+            
+            return res.render('login', {erro: erro.mapped()})
+            
+
+        }else{
+                let senhaCriptografada = bcrypt.hashSync(senha, 10)
+                let loginJson = JSON.stringify({email,senha: senhaCriptografada})
+                fs.writeFileSync(usuariosJson, loginJson)
+                return res.redirect('/home')
+                
+        }
+
 
 
     }
