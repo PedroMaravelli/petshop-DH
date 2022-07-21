@@ -1,1 +1,7 @@
-{"email":"phmaravelli@gmail.com","senha":"$2b$10$fxS1A/gb7zgUVgiUso2TIet.KwtsdqRsbxtiQ08OQum54Ei7DAD1W"}
+{
+    "dadosDoUsuario": {
+        "nome": "tosa",
+        "email": "phmaravelli@gmail.com",
+        "senha": "$2b$10$yXIYEJeIS7Q6roxZQhDQtegRkzC3p8.SFOx0ws1J/TBl1JaDOmZ9u"
+    }
+}
