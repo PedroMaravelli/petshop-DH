@@ -45,9 +45,13 @@ const loginController = {
                 
         }
 
-
-
+        
+        
+        
+    },
+    
+    cadastrarSe: (req,res) =>{
+        res.render('cadastrarSe')
     }
-
 }
 module.exports = loginController
