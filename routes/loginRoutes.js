@@ -13,4 +13,5 @@ router.get('/cadastrar', loginController.cadastrarSe)
 
 
 
+
 module.exports = router

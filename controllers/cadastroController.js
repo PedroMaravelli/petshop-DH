@@ -11,14 +11,15 @@ const cadastroController = {
             
 
         }else{
-            res.render('index')
+            a
+            busca(res.render('index'))
         }
 
         
 
         
 
-    res.render('index',{servicos:listaServicos})
+    res.render('index')
     },
 
 
