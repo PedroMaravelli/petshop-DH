@@ -8,5 +8,11 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'areas',
         timestamps: false
     })
+    area.associate = (models) => {
+        area.hasMany(models.Curso, {
+            foreignKey: 'area_id',
+            
+        })
+    }
     return area
 }

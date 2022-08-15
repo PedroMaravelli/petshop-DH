@@ -36,6 +36,12 @@
             <button type="submit">Registrar</button>
 
         </form>
+        <% cursos.forEach((curso)=>{ %>
+            <p><%= curso.nome %></p>
+            <P><%= curso.Area.tipo %></P>
+            <a href="/login/cursos/<%= curso.id%>">Ver curso</a>
+
+        <%})%>
         
     </main>
     <footer>
